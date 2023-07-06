@@ -9,7 +9,7 @@ const router = createRouter({
 router.beforeEach((to, from, next) => {
   const route = useRoute();
 
-  console.log({ route });
+  // console.log({ route });
 
   const authStore = useAuthStore();
   // 下一頁需要判斷是否有權限
