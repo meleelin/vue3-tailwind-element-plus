@@ -1,9 +1,8 @@
-<script setup></script>
+<script setup>
+import Tag from "../../components/Tag.vue";
+</script>
 <template>
-  <h1>about</h1>
-  <div class="flex gap-5">
-    <router-link to="/">Home</router-link>
-    <router-link to="/login">Login</router-link>
-  </div>
+  <h1 class="text-2xl">about</h1>
+  <Tag></Tag>
 </template>
 <style scoped></style>
