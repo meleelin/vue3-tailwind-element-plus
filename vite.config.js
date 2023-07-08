@@ -8,9 +8,7 @@ import { visualizer } from "rollup-plugin-visualizer";
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  resolve: {
-    alias: { "@": path.resolve(__dirname, "src") },
-  },
+  resolve: { alias: { "@": path.resolve(__dirname, "src") } },
   plugins: [
     vue(),
     AutoImport({ resolvers: [ElementPlusResolver()] }),
@@ -23,4 +21,5 @@ export default defineConfig({
       open: true, //如果存在本地服務端口，將在打包後自動展示
     }),
   ],
+  base: "./",
 });
